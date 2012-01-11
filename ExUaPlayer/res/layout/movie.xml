@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:padding="5px">
+
+
+
+
+
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="210px"
+		android:padding="5px" android:id="@+id/layout1">
+
+		<ImageView android:id="@+id/movie_image"
+			android:layout_height="200px" android:layout_width="200px" />
+
+
+		<TextView android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/movie_title"
+			android:text="" />
+
+	</LinearLayout>
+
+
+	<FrameLayout android:layout_below="@+id/layout1"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+		<ScrollView android:layout_height="match_parent"
+			android:layout_width="match_parent" android:layout_marginLeft="5px"
+			android:layout_marginRight="5px" android:layout_marginTop="5px"
+			android:layout_marginBottom="100px" android:layout_gravity="top">
+
+			<TextView android:layout_width="match_parent" android:id="@+id/movie_description"
+				android:text="This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as headerThis text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header"
+				android:layout_height="match_parent" 
+				android:layout_margin="5px"/>
+
+		</ScrollView>
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:gravity="center_horizontal" android:layout_gravity="bottom|center_horizontal">
+
+			<Button android:text="Watch" android:id="@+id/bt_watch"
+				android:layout_width="150dip" android:layout_height="wrap_content"
+				android:onClick="onBtWatch"></Button>
+
+			<Button android:layout_width="150dip" android:id="@+id/bt_download"
+				android:onClick="onBtDownload" android:text="Download"
+				android:layout_height="wrap_content"></Button>
+		</LinearLayout>
+
+
+	</FrameLayout>
+
+</RelativeLayout>
